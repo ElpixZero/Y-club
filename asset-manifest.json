@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Y-club/static/js/main.7311878e.chunk.js",
+    "main.js.map": "/Y-club/static/js/main.7311878e.chunk.js.map",
+    "runtime-main.js": "/Y-club/static/js/runtime-main.5c6638ab.js",
+    "runtime-main.js.map": "/Y-club/static/js/runtime-main.5c6638ab.js.map",
+    "static/js/2.706b85dc.chunk.js": "/Y-club/static/js/2.706b85dc.chunk.js",
+    "static/js/2.706b85dc.chunk.js.map": "/Y-club/static/js/2.706b85dc.chunk.js.map",
+    "index.html": "/Y-club/index.html",
+    "precache-manifest.8bc47dbd75d31999c421c34783c6a68c.js": "/Y-club/precache-manifest.8bc47dbd75d31999c421c34783c6a68c.js",
+    "service-worker.js": "/Y-club/service-worker.js",
+    "static/js/2.706b85dc.chunk.js.LICENSE.txt": "/Y-club/static/js/2.706b85dc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c6638ab.js",
+    "static/js/2.706b85dc.chunk.js",
+    "static/js/main.7311878e.chunk.js"
+  ]
+}
