@@ -25,39 +25,70 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  absoluteDiv: {
+    position: 'absolute',
+    top: 20,
+    right: 40,
+  },
+  buttonSecondary: {
+    width: 90,
+    height: 25
+  },
+  input: {
+    width: 40,
+    height: 25,
+    marginRight: 5
   }
 };
 
 function App() {
   const [clickCount, setClickCoutn] = React.useState(0);
-  const buttonRef = React.useRef();
+  const [inititalClickCount, setInitialClickCount] = React.useState(0);
   let clickingTimer;
 
   const isPalindrom = value => {
-    if (typeof value !== 'number') return new Error('Проверяемое на палиндром значение не число!')
+    if (typeof value !== 'number') throw new Error('Проверяемое на палиндром значение не число!');
+
     const arrayOfValue = String(value).split('');
 
     for (let i = 0; i < arrayOfValue.length; i++) {
-      if (arrayOfValue[i] !== arrayOfValue[arrayOfValue.length - 1]) return false;
+      if (arrayOfValue[i] !== arrayOfValue[arrayOfValue.length - i - 1]) return false;
       if (i > arrayOfValue.length / 2) return true;
     }
-
     return true;
+  }
+
+  const checkInitialClickCount = value => {
+    if (isNaN(value)) return setInitialClickCount(0);
+    return setInitialClickCount(value);
   }
 
   const onDoubleClick = (value) => {
     clearTimeout(clickingTimer);
-    const palindromResult = isPalindrom(true) ? 'Данное число является палиндромом!' : 'Данное число не является палиндромом!'
-    alert(`Ваше число: ${value} \n${palindromResult}`);
+
+    try {
+      const palindromResult = isPalindrom(value) ? 'Данное число является палиндромом!' : 'Данное число не является палиндромом!';
+      alert(`Ваше число: ${value} \n${palindromResult}`);
+
+    } catch(e) {
+      return alert(e.message);
+    }
   }
 
   const onSingleClick = () => {
     clickingTimer = setTimeout(setClickCoutn.bind(this, clickCount + 1), 300);
   }
   return (
+    <>
     <div style={styles.container}>
-      <button ref={buttonRef} style={styles.button} onDoubleClick={onDoubleClick.bind(this, clickCount)} onClick={onSingleClick}>{clickCount}</button>
+      <button style={styles.button} onDoubleClick={onDoubleClick.bind(this, clickCount)} onClick={onSingleClick}>{clickCount}</button>
+      <div style={styles.absoluteDiv}>
+        <input value={inititalClickCount} onChange={e => checkInitialClickCount(Number(e.target.value))} style={styles.input} type="text"/>
+        <button onClick={setClickCoutn.bind(this, inititalClickCount)} style={styles.buttonSecondary}>Установить</button>
+      </div>
     </div>
+    </>
   );
 }
 
