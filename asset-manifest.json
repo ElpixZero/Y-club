@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/Y-club/static/js/main.37f882d6.chunk.js",
-    "main.js.map": "/Y-club/static/js/main.37f882d6.chunk.js.map",
+    "main.js": "/Y-club/static/js/main.ce4d7072.chunk.js",
+    "main.js.map": "/Y-club/static/js/main.ce4d7072.chunk.js.map",
     "runtime-main.js": "/Y-club/static/js/runtime-main.5c6638ab.js",
     "runtime-main.js.map": "/Y-club/static/js/runtime-main.5c6638ab.js.map",
-    "static/js/2.706b85dc.chunk.js": "/Y-club/static/js/2.706b85dc.chunk.js",
-    "static/js/2.706b85dc.chunk.js.map": "/Y-club/static/js/2.706b85dc.chunk.js.map",
+    "static/js/2.439cadd5.chunk.js": "/Y-club/static/js/2.439cadd5.chunk.js",
+    "static/js/2.439cadd5.chunk.js.map": "/Y-club/static/js/2.439cadd5.chunk.js.map",
     "index.html": "/Y-club/index.html",
-    "precache-manifest.30a1f415215eaced77b2f2a0ef267c9d.js": "/Y-club/precache-manifest.30a1f415215eaced77b2f2a0ef267c9d.js",
+    "precache-manifest.1b2c9a010cc8be91c0549a381e70eec6.js": "/Y-club/precache-manifest.1b2c9a010cc8be91c0549a381e70eec6.js",
     "service-worker.js": "/Y-club/service-worker.js",
-    "static/js/2.706b85dc.chunk.js.LICENSE.txt": "/Y-club/static/js/2.706b85dc.chunk.js.LICENSE.txt"
+    "static/js/2.439cadd5.chunk.js.LICENSE.txt": "/Y-club/static/js/2.439cadd5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5c6638ab.js",
-    "static/js/2.706b85dc.chunk.js",
-    "static/js/main.37f882d6.chunk.js"
+    "static/js/2.439cadd5.chunk.js",
+    "static/js/main.ce4d7072.chunk.js"
   ]
 }
